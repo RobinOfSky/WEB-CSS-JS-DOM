@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<form action="javascript:">
+    <p>选择城市:</p>
+    <p>
+        <select id="sid">
+            <option value="北京" order="1">北京</option>
+            <option value="上海" order="5">上海</option>
+            <option value="广州" order="20">广州</option>
+        </select>
+    </p>
+</form>
+<p><input type="button" value="选择" id="btn"></p>
+</body>
+<script>
+    var btn = document.getElementById("btn");
+    var sid = document.getElementById("sid");
+    btn.onclick = function(){
+        idx = sid.selectedIndex;
+        opts = sid.options;
+        alert(opts[idx].value);   //通过options里的value属性来获取值-value是标准属性
+        alert("城市排名："+opts[idx].getAttribute("order"));  //通过order属性来获取值-order是非标准属性，所以用getAttribute来获得。
+    }
+</script>
+
+</html>

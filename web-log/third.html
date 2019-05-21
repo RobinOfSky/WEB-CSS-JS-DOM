@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<form action="">
+    <p>选择爱好：</p>
+    <p>
+        <label>
+            <input type="checkbox" name="" id="">篮球
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="" id="">足球
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="" id="">游泳
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="" id="">逛街
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" name="" id="">音乐
+        </label>
+    </p>
+</form>
+<p>
+    <button id="all">全选</button>
+    <button id="notall">全不选</button>
+    <button id="unall">反选</button>
+</p>
+</body>
+<script>
+    var all = document.getElementById('all');
+    var notall = document.getElementById('notall');
+    var unall = document.getElementById('unall');
+    inputs = document.getElementsByTagName('input');
+    //全选
+    all.onclick = function(){
+        for(i=0;i<inputs.length;i++){
+            inputs[i].checked = true;
+        }
+    }
+    //全不选
+    notall.onclick = function(){
+        for(i=0;i<inputs.length;i++){
+            inputs[i].checked = false;
+        }
+    }
+    //反选
+    unall.onclick = function(){
+        for(i=0;i<inputs.length;i++){
+
+            //方法1：三元运算符a?1:2;
+            //inputs[i].checked = inputs[i].checked?false:true;
+
+            //方法2：一元运算符 !
+            inputs[i].checked = !inputs[i].checked;
+        }
+    }
+</script>
+</html>
