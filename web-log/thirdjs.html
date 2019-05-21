@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="third.css" type="text/css" rel="stylesheet"/>
+    <script language="JavaScript">
+      function jia() {
+          var a = parseInt(document.getElementById("jiafirst").value);
+          var b = parseInt(document.getElementById('jiasecond').value);
+          var c =a+b;
+          document.getElementById("jiathird").value=c;
+      }
+      function jian() {
+          var a = parseInt(document.getElementById("jianfirst").value);
+          var b = parseInt(document.getElementById('jiansecond').value);
+          var c =a-b;
+          document.getElementById("jianthird").value=c;
+      }
+      function cheng() {
+          var a = parseInt(document.getElementById("chengfirst").value);
+          var b = parseInt(document.getElementById('chengsecond').value);
+          var c =a*b;
+          document.getElementById("chengthird").value=c;
+      }
+      function chu() {
+          var a = parseInt(document.getElementById("chufirst").value);
+          var b = parseInt(document.getElementById('chusecond').value);
+          var c =a/b;
+          document.getElementById("chuthird").value=c;
+      }
+
+
+      function tt() {
+          var a=parseInt(document.getElementById("ttstart").value);
+          var b=alert(parseInt(a,2));
+          document.getElementById("ttend").value=b;
+      }
+      function tt1() {
+          //10进制转2进制
+          var a=parseInt(document.getElementById("ttstart2").value);
+          var b=alert(x.toString(2));
+          document.getElementById("ttend2").value=b;
+      }
+      function ts() {
+          //先转为10进制，再转为16进制
+          var a=parseInt(document.getElementById("tsstart").value);
+          var b=alert(parseInt(a,2));
+          var c=alert(b.toString(16));
+          document.getElementById("tsend").value=c;
+      }
+      function st() {
+          //16进制转二进制
+          var a=parseInt(document.getElementById("ststart").value);
+          var b=alert(parseInt(a,16));
+          var c=alert(b.toString(2));
+          document.getElementById("stend").value=b;
+      }
+
+      function funif() {
+          var a=parseInt(document.getElementById("ifstart").value);
+          var b;
+          if(a%2==0){
+             b="偶数";
+              document.getElementById("ifend").value=b;
+          }else{
+              b="奇数";
+              document.getElementById("ifend").value=b;
+          }
+      }
+
+      function funfor() {
+          var a=parseInt(document.getElementById("forstart").value);
+          var i=0;
+          for(i;i<a;++i){
+              document.getElementById("forend").value=i;
+          }
+      }
+
+    </script>
+
+</head>
+<body>
+<!--js的简单应用：
+1.计算器，进制转换
+2.if for while swich case
+3.内置对象和函数-->
+<div class="outlayer"><!-- 最外层的盒子-->
+    <div class="top"><!-- 第一大行盒子-->
+        <div class="topfirst"><!--第一大行left-->
+            <label style="color:crimson">计算器</label><hr/>
+            <label style="color: darkmagenta">加法</label><br/>
+            <div class="jia" style="width:500px;">
+                <input id="jiafirst" type="text" style="width: 50px" value="" >
+                <label style="color:mediumblue"><b>+</b></label>
+                <input id="jiasecond" type="text" style="width: 50px" value="">
+                <button style="color:mediumblue" onclick="jia()"><b>=</b></button>
+                <input id="jiathird" type="text" style="width: 50px" value="" >
+            </div>
+            <label style="color: darkmagenta">减法</label><br/>
+            <div class="jian" style="width:500px;">
+                <input id="jianfirst" type="text" style="width: 50px" value="">
+                <label style="color:mediumblue"><b>-</b></label>
+                <input id="jiansecond" type="text" style="width: 50px" value="">
+                <button style="color:mediumblue" onclick="jian()"><b>=</b></button>
+                <input id="jianthird" type="text" style="width: 50px" value="">
+            </div>
+            <label style="color: darkmagenta">乘法</label><br/>
+            <div class="cheng" style="width:500px;">
+                <input id="chengfirst" type="text" style="width: 50px">
+                <label style="color:mediumblue"><b>×</b></label>
+                <input id="chengsecond" type="text" style="width: 50px">
+                <button style="color:mediumblue" onclick="cheng()"><b>=</b></button>
+                <input id="chengthird" type="text" style="width: 50px">
+            </div>
+            <label style="color: darkmagenta">除法</label><br/>
+            <div class="chu" style="width:500px;">
+                <input id="chufirst" type="text" style="width: 50px">
+                <label style="color:mediumblue"><b>÷</b></label>
+                <input id="chusecond" type="text" style="width: 50px">
+                <button style="color:mediumblue" onclick="chu()"><b>=</b></button>
+                <input id="chuthird" type="text" style="width: 50px">
+            </div>
+        </div>
+        <div class="topsecond"><!--第一大行medium -->
+            <label style="color:crimson"><b>进制转换</b></label><hr/>
+            <label style="color: darkmagenta">二进制转十进制</label><br/>
+                <input id="ttstart" type="number" style="width: 50px;">
+                <input type="button" value="转换" style="width: 50px;" onclick="tt()">
+                <input id="ttend" type="number" style="width: 50px;"><hr/>
+            <label style="color: darkmagenta">十进制转二进制</label><br/>
+                <input id="ttstart2"type="number" style="width: 50px;">
+                <input type="button" value="转换" style="width: 50px;" onclick="tt1()">
+                <input id="ttend2" type="number" style="width: 50px;"><hr/>
+            <label style="color: darkmagenta">二进制转十六进制</label><br/>
+                <input id="tsstart" type="number" style="width: 50px;">
+                <input type="button" value="转换" style="width: 50px;" onclick="ts()">
+                <input id="tsend" type="number" style="width: 50px;"><hr/>
+            <label style="color: darkmagenta">十六进制转二进制</label><br/>
+                <input id="ststart" type="number" style="width: 50px;">
+                <input type="button" value="转换" style="width: 50px;" onclick="st()">
+                <input id="stend" type="number" style="width: 50px;"><hr/>
+        </div>
+        <div class="topthird"><!--第一大行right -->
+            <label style="color:crimson"><b>条件循环语句的简单应用</b></label><hr/>
+                <label style="color: darkmagenta">IF语句</label><br/>
+                <label>请填入一个数：</label>
+                <input id="ifstart" type="number" style="width: 50px;" value="">
+                <label >他是一个</label>
+                <input id="ifend" type="text" style="width: 50px;" value="" onclick="funif()"><hr/>
+            <label style="color: darkmagenta">FOR语句</label><br/>
+                <label>请输入一个数：</label>
+                <input if="forstart" type="number" style="width: 50px;">
+                <label>0到这个数之间的数如下：</label>
+                <input if="forend" type="text" style="width: 100px;" onclick="funfor()"><hr/>
+            <label style="color: darkmagenta">WHILE语句</label><br/>
+                <label>请输入一个数：</label>
+                <input id="whilestart" type="number" style="width: 50px;">
+                <label>当输入的数大于0的话，求0+1+2+……+n的值：</label>
+                <input id="whileend" type="text" style="width: 100px;"><hr/>
+        </div>
+    </div>
+    <div class="bottom"><!-- 第二大行盒子-->
+        <div class="bottomfirst"><!--第二大行left-->
+            <p class="bottomfirstya" style="color: yellow">未来无止境，你是否期待，与我共建新型智能产业！</p>
+        </div>
+        <div class="bottomsecond"><!--第二大行medium -->
+            <p class="bottomsecondya" style="color: yellow">HTML+CSS+JS的简单应用！</p>
+
+        </div>
+        <div class="bottomthird"><!--第二大行right -->
+            <video class="viedoya" src="Keep.Running.2019.S03E04.1080p.WEB-DL.H264.AAC-TJUPT.mp4" controls/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
