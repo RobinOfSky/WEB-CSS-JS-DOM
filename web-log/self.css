@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 黑体, serif;
+    background-image: url("https://i.loli.net/2019/05/19/5ce147a20d80b97212.jpeg");
+    height: 100%;
+    width:  100%;
+    font-family: 黑体;
+}
+.important{
+    width: 1500px;
+    height: 800px;
+}
+.top{
+    border:1px solid #000;
+    position: absolute;
+    width: 1500px;
+    height: 30px;
+    top: 1px;
+    left: 5px;
+
+}
+.wether{
+    position: relative;
+    top: 5px;
+    left: 80px;
+}
+.medium{
+    position: relative;
+    top: 3px;
+    left: 480px;
+}
+.datalocal{
+    position: relative;
+    top: 0px;
+    left: 900px;
+}
+.bottomleft{
+    border:1px solid #000;
+    position: absolute;
+    width: 300px;
+    height: 760px;
+    top:35px;
+    left: 5px;
+}
+
+.leftfirst{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.headportrait{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    float: left;
+}
+.namerobin{
+    position: relative;
+    font-size: 30px;
+    top:14px;
+    left: 60px;
+    float: left;
+}
+.inputfirst{
+    color:chocolate;
+    position: relative;
+    top:20px;
+    left: 110px;
+    float: left;
+}
+
+.leftsecond{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    top: 75px;
+}
+
+.leftsecond1{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -70px;
+    left:10px;
+}
+.leftsecond2{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -120px;
+    left:80px;
+}
+.leftsecond3{
+    position: relative;
+    width:  70px;
+    height: 50px;
+    top: -170px;
+    left:150px;
+}
+.leftsecond4{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -220px;
+    left:230px;
+}
+.leftthird{
+    position: relative;
+    width: 280px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    top: 80px;
+}
+.leftthird1{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -70px;
+    left:10px;
+}
+.leftthird2{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -120px;
+    left:90px;
+}
+.leftthird3{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -170px;
+    left:160px;
+}
+.leftthird4{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: -220px;
+    left:240px;
+}
+.leftfour{
+    position: relative;
+    width: 280px;
+    height: 180px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    top: 100px;
+}
+.leftfour1{
+    position: relative;
+    width: 70px;
+    height: 20px;
+    top: -50px;
+    left:10px;
+}
+.leftfour2{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    top: -90px;
+    left:100px;
+}
+.leftfive{
+    position: relative;
+    width: 280px;
+    height: 210px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    top:35px;
+}
+.leftfive1{
+    position: relative;
+    width: 250px;
+    height: 20px;
+    top: -30px;
+    left:10px;
+}
+.leftfive2{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    top: -30px;
+    left:10px;
+}
+.leftfive3{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    top: -50px;
+    left:10px;
+}
+.leftfive4{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    top: -70px;
+    left:10px;
+}
+.leftsix{
+    position: relative;
+    width: 280px;
+    height: 210px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    top:35px;
+}
+.leftsix1{
+    position: relative;
+    width: 250px;
+    height: 20px;
+    top: -30px;
+    left:10px;
+}
+.leftsix2{
+    position: relative;
+    font-size: 15px;
+    font-family: 宋体;
+    width: 280px;
+    height: 80px;
+    top: -50px;
+    left:2px;
+}
+.leftsixborder{
+    border:1px solid #000;
+}
+.bottommedium{
+    border:1px solid #000;
+    position: absolute;
+    width: 890px;
+    height: 760px;
+    top:35px;
+    left: 315px;
+}
+.bottommediumfirst{
+    position: relative;
+    width: 870px;
+    height: 190px;
+}
+.centerleft1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 20px;
+}
+.centermedium1{
+    position: relative;
+    width:750px;
+    height: 160px;
+    top: -10px;
+    left: 70px;
+}
+.centerright1{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    top: -60px;
+    left: 750px;
+}
+
+.bottommediumsecond{
+    position: relative;
+    width: 870px;
+    height: 190px;
+}
+.centerleft2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 20px;
+}
+.centermedium2{
+    position: relative;
+    width:750px;
+    height: 160px;
+    top: -10px;
+    left: 70px;
+}
+.centerright2{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    top: -60px;
+    left: 750px;
+}
+.bottommediumthird{
+    position: relative;
+    width: 870px;
+    height: 50px;
+}
+.centerleft3{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: 15px;
+    left: 30px;
+}
+.centermedium3{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    top: -35px;
+    left: 400px;
+}
+.bottommediumfour{
+    position: relative;
+    width: 870px;
+    height: 190px;
+}
+.centerleft4{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: 15px;
+    left: 30px;
+}
+.centermedium4{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: 40px;
+    left: 70px;
+}
+.bottomrigth{
+    border:1px solid #000;
+    position: absolute;
+    width: 290px;
+    height: 760px;
+    top:35px;
+    left: 1215px;
+}
+.rightfirst{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 50px;
+}
+.rightsecond{
+    position: relative;
+    top: 8px;
+    left: 70px;
+}
+.rightthirdpre{
+    position: relative;
+    width: 30px;
+    height: 200px;
+    top:100px ;
+    left: -120px;
+}
+.rightthird{
+    background-color: bisque;
+    color:chocolate;
+    position: relative;
+    top: 120px;
+    left: 40px;
+}
+.information{
+    position: relative;
+    width: 30px;
+    height: 100px;
+    top:280px ;
+    left: 50px;
+}
+.bottomright2{
+    position: relative;
+    top: 300px;
+    left: 40px;
+}
+.bottomright3{
+    position: relative;
+    top:175px;
+    left: 160px;
+
+}
